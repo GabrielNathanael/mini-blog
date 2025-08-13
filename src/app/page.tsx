@@ -1,3 +1,11 @@
-export default function Home() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+import HeroSection from "@/components/HeroSection";
+import CategorySection from "@/components/CategorySection";
+
+export default function HomePage() {
+  return (
+    <>
+      <HeroSection />
+      <CategorySection />
+    </>
+  );
 }
