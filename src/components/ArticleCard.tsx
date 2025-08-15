@@ -19,7 +19,7 @@ export default function ArticleCard({ article }: { article: Article }) {
         <span className="text-xs text-gray-500 font-medium">
           {article.category}
         </span>
-        <h3 className="text-xs md:text-sm font-semibold mt-2 text-gray-900 leading-tight transition-colors duration-300 line-clamp-2 group-hover:line-clamp-none">
+        <h3 className="text-xs md:text-sm font-semibold mt-2 text-gray-900 leading-tight transition-colors duration-300 line-clamp-1 group-hover:line-clamp-none">
           {article.title}
         </h3>
         <p className="text-xs text-gray-400 mt-2">

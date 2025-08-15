@@ -15,7 +15,7 @@ export default function Navbar() {
       {/* Wrapper */}
       <div className="container mx-auto px-4 py-4">
         {/* Desktop Layout */}
-        <div className="hidden md:grid md:grid-cols-3 items-center">
+        <div className="hidden lg:grid lg:grid-cols-3 items-center">
           {/* Left: Logo */}
           <div className="text-lg md:text-xl font-bold text-gray-900">
             BinaryStories
@@ -50,6 +50,34 @@ export default function Navbar() {
                 Sign Up
               </button>
             </div>
+          </div>
+        </div>
+
+        {/* Tablet Layout */}
+        <div className="hidden md:flex lg:hidden items-center gap-4">
+          {/* Logo */}
+          <div className="text-lg font-bold text-gray-900 whitespace-nowrap">
+            BinaryStories
+          </div>
+
+          {/* SearchBar */}
+          <div className="flex-1 max-w-md">
+            <SearchBar />
+          </div>
+
+          {/* Menu + Auth */}
+          <div className="flex items-center gap-3 text-sm whitespace-nowrap">
+            <ul className="flex items-center gap-3 text-gray-700 font-medium">
+              <li className="hover:text-gray-900 cursor-pointer">Home</li>
+              <li className="hover:text-gray-900 cursor-pointer">Categories</li>
+              <li className="hover:text-gray-900 cursor-pointer">Contact</li>
+            </ul>
+            <button className="text-gray-700 hover:text-gray-900 font-medium">
+              Login
+            </button>
+            <button className="text-gray-700 hover:text-gray-900 font-medium">
+              Sign Up
+            </button>
           </div>
         </div>
 
