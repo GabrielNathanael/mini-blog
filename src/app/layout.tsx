@@ -1,6 +1,11 @@
 import "./globals.css";
+import { Manrope } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+const manrope = Manrope({
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "BinaryStories",
@@ -18,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={manrope.className}>
       <body className="bg-gray-50 min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">{children}</main>
